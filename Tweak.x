@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 // Copyright (C) 2026 itsAllexB
 
-// FilesExtensions 1.0.0
+// FilesExtensions 1.0.1
 // Controls whether the Files app (iOS 12) shows file name extensions. Display only: no file is renamed.
 //
 // Where iOS 12 hides extensions (FileProvider.framework, in the dyld shared cache):

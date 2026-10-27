@@ -1,6 +1,6 @@
 Package: com.itsallexb.filesextensions
 Name: FilesExtensions (iOS 12)
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm
 Description: Shows file name extensions in the Files app on iOS 12, so patch_dyld.ios and patch_dyld.tvos no longer both look like "patch_dyld". Works in every location, in Recents, Search, the Info sheet, rename, and the Files picker other apps use. Show all, hide only known, or keep the iOS default. Only the display changes; no file is renamed. Settings > Files Extensions.
 Maintainer: itsAllexB
