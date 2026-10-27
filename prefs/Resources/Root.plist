@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Shows file name extensions such as .txt, .pdf or .dylib in the Files app and in the Files picker that other apps open, including Recents, Search and the Info sheet. Only what you see changes; no file is renamed.</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.itsallexb.filesextensions/prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.itsallexb.filesextensions</string>
+			<key>key</key>
+			<string>enabled</string>
+			<key>label</key>
+			<string>Enabled</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Hide Known Extensions hides extensions of file types iOS recognises (photo.jpg shows as "photo") and shows the others (patch_dyld.ios, patch_dyld.tvos). iOS Default hides the last extension of every file, as iOS 12 does.
+
+When the extension is shown, rename edits the full name: type "b.txt" to get b.txt, or "b" to get a file with no extension. When it is hidden, iOS adds the old extension back, unless you type it yourself.</string>
+			<key>label</key>
+			<string>Extensions</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.itsallexb.filesextensions/prefschanged</string>
+			<key>cell</key>
+			<string>PSLinkListCell</string>
+			<key>default</key>
+			<string>all</string>
+			<key>defaults</key>
+			<string>com.itsallexb.filesextensions</string>
+			<key>detail</key>
+			<string>PSListItemsController</string>
+			<key>key</key>
+			<string>mode</string>
+			<key>label</key>
+			<string>Show Extensions</string>
+			<key>shortTitles</key>
+			<array>
+				<string>All</string>
+				<string>Hide Known</string>
+				<string>iOS Default</string>
+			</array>
+			<key>validTitles</key>
+			<array>
+				<string>Show All Extensions</string>
+				<string>Hide Known Extensions</string>
+				<string>Hide All Extensions (iOS Default)</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<string>all</string>
+				<string>known</string>
+				<string>default</string>
+			</array>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Always shows every extension in the System location added by FilesRoot, whatever is chosen above, so system files keep their exact names.</string>
+			<key>label</key>
+			<string>System Location</string>
+		</dict>
+		<dict>
+			<key>PostNotification</key>
+			<string>com.itsallexb.filesextensions/prefschanged</string>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.itsallexb.filesextensions</string>
+			<key>key</key>
+			<string>alwaysShowSystem</string>
+			<key>label</key>
+			<string>Always Show in System</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>footerText</key>
+			<string>Changes apply right away to open Files windows. A Files picker that is already open in another app picks them up the next time it is opened.</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>Files Extensions</string>
+</dict>
+</plist>

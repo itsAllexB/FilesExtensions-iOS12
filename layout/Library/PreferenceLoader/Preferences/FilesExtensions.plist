@@ -1,0 +1,10 @@
+{
+	entry = {
+		bundle = FilesExtensionsPrefs;
+		cell = PSLinkCell;
+		detail = FXRootListController;
+		icon = icon.png;
+		isController = 1;
+		label = "Files Extensions";
+	};
+}
